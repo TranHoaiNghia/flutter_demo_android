@@ -11,7 +11,6 @@ void main() {
 }
 
 class Body extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,28 +18,26 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           Card(
-            color: Colors.yellow,
-            shadowColor: Colors.green,
-            elevation: 8,
             margin: EdgeInsets.all(20),
+            color: Colors.yellow,
+            elevation: 8,
+            shadowColor: Colors.green,
             child: Column(
               children: [
                 ListTile(
-                  title: Text("Title"),
-                  subtitle: Text("Sub text title"),
+                  title: Text("Content"),
+                  subtitle: Text("Sub content"),
                   leading: Icon(Icons.info),
                   trailing: Icon(Icons.navigate_next),
                   isThreeLine: true,
                   onTap: () {
-                    print("hien onTap:");
+                    print("OnTap hehe");
                   },
                 ),
-                Text("Text content", style: TextStyle(
-                  backgroundColor: Colors.blue
-                ),),
+                Text("Text Content"),
                 Container(
-                  padding: EdgeInsets.all(8),
                   alignment: Alignment.bottomRight,
+                  padding: EdgeInsets.all(8),
                   child: TextButton(
                     child: Text("Done!"),
                     onPressed: () {
