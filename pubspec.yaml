@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_svg: ^2.0.10+1
   flutter:
     sdk: flutter
 
@@ -98,3 +99,6 @@ flutter:
          - asset: assets/fonts/PlayfairDisplay-VariableFont_wght.ttf
            style: normal
            weight: 500
+
+  assets:
+     - assets/Images/
